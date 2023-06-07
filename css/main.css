@@ -24,3 +24,11 @@ ul li{
 ul a{
     text-decoration: none;
 }
+.banner{
+    display:flex ;
+    background-color: brown;
+}
+.banner img{
+    width: 100%;
+
+}
