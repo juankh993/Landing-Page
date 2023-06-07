@@ -1,0 +1,26 @@
+.container{
+    background-color: green;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+img{
+    background-color: gray;
+    width: auto;
+    height: auto;
+    
+}
+ul{
+    text-align: end;
+    background-color: red;
+    
+}
+ul li{
+    display: inline-block;
+    padding: 0 5px;
+}
+ul a{
+    text-decoration: none;
+}
