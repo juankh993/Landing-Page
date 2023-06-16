@@ -1,20 +1,38 @@
+:root {
+    /* font size */
+    --size-title: 22px;
+    --size-paragraph: 18px;
+
+    /* primary */
+    --White: hsl(0, 0%, 100%);
+    --Black: hsl(0, 0%, 0%);
+    --Dark-Gray: hsl(0, 0%, 55%);
+    --Very-Dark-Gray: hsl(0, 0%, 41%);
+    /* font family */
+
+    --font-alata: 'Alata', sans-serif;
+    --font-josefin-sans: 'Josefin Sans', sans-serif;
+}
+
+* {
+    margin: auto;
+}
 header{
-    background-color: green;
+    position: fixed;
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-img{
-    background-color: gray;
+.logo{
     width: auto;
     height: auto;
-    
+    margin: 2rem;
 }
 ul{
     text-align: end;
-    background-color: red;
+
     
 }
 ul li{
@@ -23,6 +41,8 @@ ul li{
 }
 ul a{
     text-decoration: none;
+    color: var(--White);
+    font-family: var(--font-josefin-sans);
 }
 .banner{
     display:flex ;
@@ -31,4 +51,115 @@ ul a{
 .banner img{
     width: 100%;
 
+}
+
+.container {
+    max-width: 1180px;
+    position: relative;
+    margin: 5rem auto;
+    line-height: 0;
+}
+
+.box-text {
+    position: absolute;
+    background-color: #fff;
+    width: fit-content;
+    /* max-width: 100%; */
+    right: 0;
+    bottom: 0;
+    padding: 3rem 5rem 0 5rem;
+}
+
+.container img {
+    max-width: 100%;
+}
+
+.box-text h1 {
+    max-width: 400px;
+    font-family: var(--font-josefin-sans);
+    font-size: 45px;
+    line-height: 1;
+    margin-bottom: 20px;
+    font-weight: 400;
+
+}
+
+.box-text p {
+    max-width: 450px;
+    font-family: var(--font-alata);
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 25px;
+    color: var(--Dark-Gray);
+}
+
+@media (max-width: 700px) {
+    .container {
+        position: unset;
+        max-width: 100%;
+        margin: 5rem 1.5rem;
+    }
+
+    .container img {
+        width: 100%;
+    }
+
+    .box-text {
+        position: unset;
+        padding: 1rem;
+    }
+
+    .box-text h1 {
+        font-size: 35px;
+        text-align: center;
+    }
+
+    .box-text p {
+        text-align: center
+    }
+}
+
+@media (max-width: 768px) {
+    .box-text {
+        max-width: 100%;
+        position: unset;
+        margin: auto;
+    }
+    .container{
+        padding: 1rem 2rem 0 2rem;
+       
+    }
+    img{
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 425px) {
+    .container{
+        padding: 0;
+       
+    }
+    img{
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 375px) {
+    .container{
+        padding: 0;
+       
+    }
+    img{
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 320px) {
+    .box-text h1 {
+        font-size: 28px;
+    }
+    .container{
+        padding: 1rem 0 0 0;
+       
+    }
 }
