@@ -17,22 +17,23 @@
 
 * {
     padding: 0;
-    margin: auto;
+    margin: 0;
     box-sizing: border-box;
 }
 header{
-    position: fixed;
+    position: absolute;
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     z-index: 1;
+    padding: 0 18.7rem;
 }
 
 .logo{
     width: auto;
     height: auto;
-    margin: 2rem;
+    margin: 2rem 0;
 }
 ul{
     text-align: end;
@@ -57,16 +58,14 @@ ul a{
     
 }
 .banner h1{
-    max-width: 30vw;
+    max-width: 28vw;
     position: absolute;
     color: var(--White);
     font-family: var(--font-josefin-sans);
-    font-weight: 500;
+    font-weight: 200;
     border: 1px solid var(--White);
-    /* left: 15%; */
-    /* bottom: 20px; */
-    font-size: 40px;
-    padding: 3rem;
+    font-size: 3vw;
+    padding: 2rem;
     left: 20%;
 
 }
@@ -85,7 +84,6 @@ ul a{
     position: absolute;
     background-color: #fff;
     width: fit-content;
-    /* max-width: 100%; */
     right: 0;
     bottom: 0;
     padding: 3rem 5rem 0 5rem;
@@ -95,13 +93,13 @@ ul a{
     max-width: 100%;
 }
 
-.box-text h1 {
+.box-text h2 {
     max-width: 400px;
     font-family: var(--font-josefin-sans);
     font-size: 45px;
     line-height: 1;
     margin-bottom: 20px;
-    font-weight: 400;
+    font-weight: 200;
 
 }
 
@@ -113,33 +111,51 @@ ul a{
     line-height: 25px;
     color: var(--Dark-Gray);
 }
-
-section{
-    max-width: 1180px;
-    position: relative;
-    /* justify-content: space-around; */
+.section-our-creation{
+    padding: 0 18.7rem;
     
-}
-section .container-our-creation{
-    /* position: absolute; */
-    margin: 5rem 0;
-    display: flex;
-    background-color: rgb(13, 188, 177);
+    
     font-family: var(--font-josefin-sans);
     font-size: var(--size-title);
+}
+.container-our-creation{
+   
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
     
 }
-section .container-our-creation h1{
-    position: absolute;
-    left: 0;
+.container-our-creation a{
+    border: 1px solid var(--Black);
+    padding: 0.5rem 2rem;
+    text-decoration: none;
+    font-family: var(--font-alata);
+    font-size: 1rem;
+    color: var(--black);
+    font-weight: 200;
+    letter-spacing: 3px;
+}
+
+.container-our-creation h2{
+    font-weight: 300;
+    line-height: 1.5;
+}
+
+/*---------------------------------START GRID-----------------------------*/
+
+.section-grid{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+picture img{
+    width: 100%;
 
 }
 
-section .container-our-creation a{
-    position: absolute;
-    right: 0;
+/*---------------------------------END GRID-----------------------------*/
 
-}
 
 @media (max-width: 700px) {
     .container {
